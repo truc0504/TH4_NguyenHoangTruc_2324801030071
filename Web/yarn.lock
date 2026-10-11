@@ -25,7 +25,7 @@
   dependencies:
     "@babel/highlight" "7.0.0-beta.47"
 
-"@babel/core@^7.0.0 || ^7.0.0-rc || ^7.0.0-beta.41", "@babel/core@7.0.0-beta.47":
+"@babel/core@7.0.0-beta.47":
   version "7.0.0-beta.47"
   resolved "https://registry.npmjs.org/@babel/core/-/core-7.0.0-beta.47.tgz"
   integrity sha512-7EIuAX0UVnCgZ0E9tz9rFK0gd+aovwMA9bul+dnkmBQYLrJdas2EHMUSmaK67i1cyZpvgVvXhHtXJxC7wo3rlQ==
@@ -1106,14 +1106,6 @@ ajv-keywords@^3.1.0:
   resolved "https://registry.npmjs.org/ajv-keywords/-/ajv-keywords-3.2.0.tgz"
   integrity sha1-6GuBnGAs+IIa1jdBNpjx3sAhhHo=
 
-ajv@^5.0.0:
-  version "4.11.8"
-  resolved "https://registry.npmjs.org/ajv/-/ajv-4.11.8.tgz"
-  integrity sha1-gv+wKynmYq5TvcIK8VlHcGc5xTY=
-  dependencies:
-    co "^4.6.0"
-    json-stable-stringify "^1.0.1"
-
 ajv@^5.1.0:
   version "5.5.2"
   resolved "https://registry.npmjs.org/ajv/-/ajv-5.5.2.tgz"
@@ -1144,7 +1136,7 @@ ajv@^5.3.0:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.3.0"
 
-ajv@^6.0.0, ajv@^6.1.0:
+ajv@^6.1.0:
   version "6.5.2"
   resolved "https://registry.npmjs.org/ajv/-/ajv-6.5.2.tgz"
   integrity sha512-hOs7GfvI6tUI1LfZddH82ky6mOMyTuY0mk7kE2pWpmhhUSkumzaTO5vbVwij39MdwPQWCV4Zv57Eo06NtL/GVA==
@@ -1445,7 +1437,7 @@ babel-eslint@^8.2.5:
     eslint-scope "3.7.1"
     eslint-visitor-keys "^1.0.0"
 
-babel-helper-vue-jsx-merge-props@^2.0.0, babel-helper-vue-jsx-merge-props@^2.0.3:
+babel-helper-vue-jsx-merge-props@^2.0.3:
   version "2.0.3"
   resolved "https://registry.npmjs.org/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-2.0.3.tgz"
   integrity sha512-gsLiKK7Qrb7zYJNgiXKpXblxbV5ffSwR0f5whkPAaBAR4fhi6bwRZxX9wBlIc5M/v8CCkXUbXZL4N/nSE97cqg==
@@ -2006,7 +1998,7 @@ chardet@^0.4.0:
   resolved "https://registry.npmjs.org/chardet/-/chardet-0.4.2.tgz"
   integrity sha1-tUc7M9yXxCTl2Y3IfVXU2KKci/I=
 
-chart.js@^2.9.3, "chart.js@>= 2.5":
+chart.js@^2.9.3:
   version "2.9.3"
   resolved "https://registry.npmjs.org/chart.js/-/chart.js-2.9.3.tgz"
   integrity sha512-+2jlOobSk52c1VU6fzkh3UwqHMdSlgH1xFv9FKMqHiNCpXsGPQa/+81AFa+i3jZ253Mq9aAycPwDjnn1XbRNNw==
@@ -2511,7 +2503,7 @@ css-declaration-sorter@^3.0.0:
     postcss "^6.0.0"
     timsort "^0.3.0"
 
-css-loader@*, css-loader@^1.0.0:
+css-loader@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/css-loader/-/css-loader-1.0.0.tgz"
   integrity sha512-tMXlTYf3mIMt3b0dDCOQFJiVvxbocJ5Ho577WiGPYPZcqVEO218L2iU22pDXzkTZCLDE+9AmGSUkWxeh/nZReA==
@@ -3202,7 +3194,7 @@ eslint-visitor-keys@^1.0.0:
   resolved "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz"
   integrity sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
 
-"eslint@^3.18.0 || ^4.0.0", eslint@^4.19.1, "eslint@>=1.6.0 <6.0.0", eslint@>=3.9.0:
+eslint@^4.19.1:
   version "4.19.1"
   resolved "https://registry.npmjs.org/eslint/-/eslint-4.19.1.tgz"
   integrity sha512-bT3/1x1EbZB7phzYu7vCr1v3ONuzDtX8WjuM9c0iYxe+cq+pwcKEoQjl7zd3RpC6YOLgnSy3cTN58M2jcoPDIQ==
@@ -4137,7 +4129,7 @@ html-minifier@^3.2.3:
     relateurl "0.2.x"
     uglify-js "3.4.x"
 
-html-webpack-plugin@^3.2.0, html-webpack-plugin@>=2.26.0:
+html-webpack-plugin@^3.2.0:
   version "3.2.0"
   resolved "https://registry.npmjs.org/html-webpack-plugin/-/html-webpack-plugin-3.2.0.tgz"
   integrity sha1-sBq71yOsqqeze2r0SS69oD2d03s=
@@ -4873,13 +4865,6 @@ json-stable-stringify-without-jsonify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz"
   integrity sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=
-
-json-stable-stringify@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/json-stable-stringify/-/json-stable-stringify-1.0.1.tgz"
-  integrity sha1-mnWdOcXy/1A/1TAGRu1EX4jE+a8=
-  dependencies:
-    jsonify "~0.0.0"
 
 json-stringify-safe@~5.0.1:
   version "5.0.1"
@@ -6138,7 +6123,7 @@ pluralize@^7.0.0:
   resolved "https://registry.npmjs.org/pluralize/-/pluralize-7.0.0.tgz"
   integrity sha512-ARhBOdzS3e41FbkW/XWrTEtukqqLoK5+Z/4UeDaLuSW+39JPeFgs4gCGqsrJHVZX0fUrx//4OF0K1CUGwlIFow==
 
-popper.js@^1.12.9, popper.js@^1.14.3:
+popper.js@^1.12.9:
   version "1.14.4"
   resolved "https://registry.npmjs.org/popper.js/-/popper.js-1.14.4.tgz"
   integrity sha1-juwdj/AqWjoVLdQ0FKFce3n9abY=
@@ -6976,7 +6961,7 @@ request-promise-native@^1.0.5:
     stealthy-require "^1.1.0"
     tough-cookie ">=2.3.3"
 
-request@^2.34, request@^2.87.0:
+request@^2.87.0:
   version "2.87.0"
   resolved "https://registry.npmjs.org/request/-/request-2.87.0.tgz"
   integrity sha512-fcogkm7Az5bsS6Sl0sibkbhcKsnyon/jV1kF3ajGmF0c8HrttdKTPRT9hieOaQHA5HEq6r8OyWOo/o781C1tNw==
@@ -8310,7 +8295,7 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-template-compiler@^2.0.0, vue-template-compiler@^2.5.16:
+vue-template-compiler@^2.5.16:
   version "2.5.17"
   resolved "https://registry.npmjs.org/vue-template-compiler/-/vue-template-compiler-2.5.17.tgz"
   integrity sha512-63uI4syCwtGR5IJvZM0LN5tVsahrelomHtCxvRkZPJ/Tf3ADm1U1wG6KWycK3qCfqR+ygM5vewUvmJ0REAYksg==
@@ -8456,7 +8441,7 @@ webpack-sources@^1.0.1, webpack-sources@^1.1.0:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-"webpack@^1.0.0 || ^2.0.0 || ^3.0.0 || ^4.0.0", "webpack@^2.0.0 || ^3.0.0 || ^4.0.0", "webpack@^3.0.0 || ^4.0.0", webpack@^4.0.0, webpack@^4.0.0-beta.1, webpack@^4.15.1, webpack@^4.4.0, webpack@>=2, "webpack@>=2.0.0 <5.0.0", webpack@>=4.0.0:
+webpack@^4.15.1:
   version "4.16.5"
   resolved "https://registry.npmjs.org/webpack/-/webpack-4.16.5.tgz"
   integrity sha512-i5cHYHonzSc1zBuwB5MSzW4v9cScZFbprkHK8ZgzPDCRkQXGGpYzPmJhbus5bOrZ0tXTcQp+xyImRSvKb0b+Kw==

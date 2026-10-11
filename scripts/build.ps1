@@ -17,11 +17,18 @@ try {
             & npm.cmd ci --no-audit --no-fund --loglevel=error
             if ($LASTEXITCODE -ne 0) { throw 'npm ci failed.' }
             $previousNodeOptions = $env:NODE_OPTIONS
+            $previousErrorPreference = $ErrorActionPreference
             $env:NODE_OPTIONS = '--openssl-legacy-provider'
             try {
+                # Windows PowerShell represents stderr warnings as ErrorRecords.
+                # Treat the native exit code as the build result, while keeping logs.
+                $ErrorActionPreference = 'Continue'
                 & npm.cmd run build 2>&1 | Tee-Object -FilePath (Join-Path $artifactDir 'build-web.log')
                 if ($LASTEXITCODE -ne 0) { throw 'Vue build failed.' }
-            } finally { $env:NODE_OPTIONS = $previousNodeOptions }
+            } finally {
+                $env:NODE_OPTIONS = $previousNodeOptions
+                $ErrorActionPreference = $previousErrorPreference
+            }
         } finally { Pop-Location }
     }
 } finally { Pop-Location }

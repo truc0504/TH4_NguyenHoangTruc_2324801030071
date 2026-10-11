@@ -7,7 +7,7 @@ Browserslist: caniuse-lite is outdated. Please run next command `yarn upgrade ca
 Browserslist: caniuse-lite is outdated. Please run next command `yarn upgrade caniuse-lite browserslist`
 Browserslist: caniuse-lite is outdated. Please run next command `yarn upgrade caniuse-lite browserslist`
 Browserslist: caniuse-lite is outdated. Please run next command `yarn upgrade caniuse-lite browserslist`
- WARNING  Compiled with 2 warnings3:34:58 PM
+ WARNING  Compiled with 2 warnings3:40:26 PM
 
  warning  
 
@@ -78,3 +78,7 @@ Entrypoints:
  DONE  Build complete. The dist directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
+Tip: the directory is meant to be served by an HTTP server, and will not work if
+you open it directly over file:// protocol. To preview it locally, use an HTTP
+server like the serve package on npm.
+

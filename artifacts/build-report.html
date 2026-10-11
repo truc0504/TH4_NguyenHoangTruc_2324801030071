@@ -6,7 +6,7 @@
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:09.05
+Time Elapsed 00:00:16.91
 
 Workload updates are available. Run `dotnet workload list` for more information.
 </pre>
@@ -20,7 +20,7 @@ Passed!  - Failed:     0, Passed:     1, Skipped:     0, Total:     1, Duration:
 Passed!  - Failed:     0, Passed:     1, Skipped:     0, Total:     1, Duration: 396 ms - DocumentService.Test.dll (net8.0)
 Passed!  - Failed:     0, Passed:     1, Skipped:     0, Total:     1, Duration: 286 ms - PaymentService.Test.dll (net8.0)
 Passed!  - Failed:     0, Passed:     1, Skipped:     0, Total:     1, Duration: 295 ms - PolicySearchService.Test.dll (net8.0)</pre>
-<h2>Vue</h2><pre> WARNING  Compiled with 2 warnings3:34:58 PM
+<h2>Vue</h2><pre> WARNING  Compiled with 2 warnings3:40:26 PM
 
  warning  
 
@@ -91,6 +91,10 @@ Entrypoints:
  DONE  Build complete. The dist directory is ready to be deployed.
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
       
+Tip: the directory is meant to be served by an HTTP server, and will not work if
+you open it directly over file:// protocol. To preview it locally, use an HTTP
+server like the serve package on npm.
+
 </pre>
 <p>WSL đã cài và yêu cầu khởi động lại Windows. Chưa chạy Docker/Eureka/PostgreSQL; chưa có backup CSDL.</p>
 <p>Log gốc: <a href="build-dotnet.log">.NET</a> · <a href="test.log">Test</a> · <a href="build-web.log">Vue</a></p>

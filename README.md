@@ -34,9 +34,11 @@ Script build toàn bộ .NET, chạy test và build Vue; log được lưu vào 
 
 MediatR 12.4.1 được đăng ký qua `AddMediatR(config => config.RegisterServicesFromAssemblyContaining<Program>())`, thay cho cú pháp Startup cũ trong đề. Gateway dùng Steeltoe Eureka 3.4.0 để xử lý cảnh báo NuGet của bản 3.2.7: https://github.com/advisories/GHSA-j8ph-6fxj-g533 .
 
-Vue đổi node-sass sang Dart Sass, dùng đường dẫn Node trực tiếp để hỗ trợ thư mục `TH_KT&TKPM`, tắt worker pool cũ và dùng wrapper chờ build promise hoàn tất trước khi thoát trên Node mới. Không tắt cảnh báo kích thước bundle.
+Vue đổi node-sass sang Dart Sass, dùng đường dẫn Node trực tiếp để hỗ trợ thư mục `TH_KT&TKPM`, tắt worker pool cũ và dùng wrapper chờ build promise hoàn tất trước khi thoát trên Node mới. `.npmrc` bật `legacy-peer-deps` cho các plugin Vue CLI 3; đã kiểm tra cài mới bằng `npm ci` rồi build thành công. Không tắt cảnh báo kích thước bundle.
 
 ## Hạ tầng và CSDL
+
+GitHub Desktop 3.6.7 đã được cài thành công qua winget từ installer chính thức. Để mở repo trong ứng dụng, dùng File → Add local repository và chọn thư mục chứa solution này. Source đã được đẩy bằng Git lên nhánh `main` của repository ở đầu trang; quyền cộng tác của giảng viên chưa được xác nhận.
 
 Docker Desktop đã có trên máy. Lệnh cài WSL đã báo thành công nhưng yêu cầu **khởi động lại Windows** mới có hiệu lực. Nếu Docker vẫn báo lỗi sau khi khởi động lại, mở PowerShell với quyền Administrator và kiểm tra `wsl --status`, `wsl --version`; cập nhật bằng `wsl --update` nếu cần. Không xóa/reset dữ liệu Docker.
 
