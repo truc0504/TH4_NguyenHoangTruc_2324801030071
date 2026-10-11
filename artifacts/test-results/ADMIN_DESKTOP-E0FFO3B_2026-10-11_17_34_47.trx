@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="f26fb67d-88a8-4deb-9c0f-c7ade3f83898" name="ADMIN@DESKTOP-E0FFO3B 2026-10-11 17:34:47" runUser="DESKTOP-E0FFO3B\ADMIN" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-11T17:34:47.9886123+07:00" queuing="2026-10-11T17:34:47.9886128+07:00" start="2026-10-11T17:34:45.6999469+07:00" finish="2026-10-11T17:34:47.9932170+07:00" />
+  <TestSettings name="default" id="465a1f21-ef28-42d8-a72b-5d190ba03cf6">
+    <Deployment runDeploymentRoot="ADMIN_DESKTOP-E0FFO3B_2026-10-11_17_34_47" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="645d3d97-8075-4ad0-ac2b-cb6675cbc5af" testId="5a242441-4ce4-c83a-f0b7-8d9154ca8c74" testName="DocumentService.Test.EnvironmentSetupTests.ServiceRegistersMediatR" computerName="DESKTOP-E0FFO3B" duration="00:00:00.3572142" startTime="2026-10-11T17:34:47.8889084+07:00" endTime="2026-10-11T17:34:47.8889362+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="645d3d97-8075-4ad0-ac2b-cb6675cbc5af" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="DocumentService.Test.EnvironmentSetupTests.ServiceRegistersMediatR" storage="d:\th_kt&amp;tkpm\insurancemicroservices\documentservice.test\bin\release\net8.0\documentservice.test.dll" id="5a242441-4ce4-c83a-f0b7-8d9154ca8c74">
+      <Execution id="645d3d97-8075-4ad0-ac2b-cb6675cbc5af" />
+      <TestMethod codeBase="D:\TH_KT&amp;TKPM\InsuranceMicroservices\DocumentService.Test\bin\Release\net8.0\DocumentService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DocumentService.Test.EnvironmentSetupTests" name="ServiceRegistersMediatR" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="5a242441-4ce4-c83a-f0b7-8d9154ca8c74" executionId="645d3d97-8075-4ad0-ac2b-cb6675cbc5af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.13)&#xD;
+[xUnit.net 00:00:00.42]   Discovering: DocumentService.Test&#xD;
+[xUnit.net 00:00:00.45]   Discovered:  DocumentService.Test&#xD;
+[xUnit.net 00:00:00.45]   Starting:    DocumentService.Test&#xD;
+[xUnit.net 00:00:00.85]   Finished:    DocumentService.Test&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

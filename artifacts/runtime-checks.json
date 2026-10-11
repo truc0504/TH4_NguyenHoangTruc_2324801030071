@@ -1,0 +1,74 @@
+[
+  {
+    "name": "AuthService",
+    "url": "http://127.0.0.1:6060/health",
+    "status": 200,
+    "body": "{\"service\":\"AuthService\",\"status\":\"ok\",\"stage\":\"environment-setup\"}"
+  },
+  {
+    "name": "ChatService",
+    "url": "http://127.0.0.1:4099/health",
+    "status": 200,
+    "body": "{\"service\":\"ChatService\",\"status\":\"ok\",\"stage\":\"environment-setup\"}"
+  },
+  {
+    "name": "ProductService",
+    "url": "http://127.0.0.1:5030/health",
+    "status": 200,
+    "body": "{\"service\":\"ProductService\",\"status\":\"ok\",\"stage\":\"environment-setup\"}"
+  },
+  {
+    "name": "PricingService",
+    "url": "http://127.0.0.1:5041/health",
+    "status": 200,
+    "body": "{\"service\":\"PricingService\",\"status\":\"ok\",\"stage\":\"environment-setup\"}"
+  },
+  {
+    "name": "OfferService",
+    "url": "http://127.0.0.1:5045/health",
+    "status": 200,
+    "body": "{\"service\":\"OfferService\",\"status\":\"ok\",\"stage\":\"environment-setup\"}"
+  },
+  {
+    "name": "PolicyService",
+    "url": "http://127.0.0.1:5050/health",
+    "status": 200,
+    "body": "{\"service\":\"PolicyService\",\"status\":\"ok\",\"stage\":\"environment-setup\"}"
+  },
+  {
+    "name": "PolicySearchService",
+    "url": "http://127.0.0.1:5065/health",
+    "status": 200,
+    "body": "{\"service\":\"PolicySearchService\",\"status\":\"ok\",\"stage\":\"environment-setup\"}"
+  },
+  {
+    "name": "PaymentService",
+    "url": "http://127.0.0.1:5070/health",
+    "status": 200,
+    "body": "{\"service\":\"PaymentService\",\"status\":\"ok\",\"stage\":\"environment-setup\"}"
+  },
+  {
+    "name": "DocumentService",
+    "url": "http://127.0.0.1:5080/health",
+    "status": 200,
+    "body": "{\"service\":\"DocumentService\",\"status\":\"ok\",\"stage\":\"environment-setup\"}"
+  },
+  {
+    "name": "DashboardService",
+    "url": "http://127.0.0.1:5035/health",
+    "status": 200,
+    "body": "{\"service\":\"DashboardService\",\"status\":\"ok\",\"stage\":\"environment-setup\"}"
+  },
+  {
+    "name": "Gateway",
+    "url": "http://127.0.0.1:8099/health",
+    "status": 200,
+    "body": "{\"service\":\"ProductService\",\"status\":\"ok\",\"stage\":\"environment-setup\"}"
+  },
+  {
+    "name": "Blazor",
+    "url": "http://127.0.0.1:5081/",
+    "status": 200,
+    "body": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>BlazorWasmClient</title>\r\n    <base href=\"/\" />\r\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js\"></"
+  }
+]

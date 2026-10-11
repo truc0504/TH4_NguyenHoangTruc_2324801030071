@@ -1,0 +1,64 @@
+name: insurance-app
+services:
+  productservice:
+    build:
+      context: ../
+      dockerfile: ProductService/Dockerfile
+    ports: ["127.0.0.1:5030:5030"]
+  pricingservice:
+    build:
+      context: ../
+      dockerfile: PricingService/Dockerfile
+    ports: ["127.0.0.1:5041:5040"]
+  offerservice:
+    build:
+      context: ../
+      dockerfile: OfferService/Dockerfile
+    ports: ["127.0.0.1:5045:5045"]
+  policyservice:
+    build:
+      context: ../
+      dockerfile: PolicyService/Dockerfile
+    ports: ["127.0.0.1:5050:5050"]
+  paymentservice:
+    build:
+      context: ../
+      dockerfile: PaymentService/Dockerfile
+    ports: ["127.0.0.1:5070:5070"]
+  policysearchservice:
+    build:
+      context: ../
+      dockerfile: PolicySearchService/Dockerfile
+    ports: ["127.0.0.1:5065:5065"]
+  authservice:
+    build:
+      context: ../
+      dockerfile: AuthService/Dockerfile
+    ports: ["127.0.0.1:6060:6060"]
+  chatservice:
+    build:
+      context: ../
+      dockerfile: ChatService/Dockerfile
+    ports: ["127.0.0.1:4099:4099"]
+  documentservice:
+    build:
+      context: ../
+      dockerfile: DocumentService/Dockerfile
+    ports: ["127.0.0.1:5080:5080"]
+  dashboardservice:
+    build:
+      context: ../
+      dockerfile: DashboardService/Dockerfile
+    ports: ["127.0.0.1:5035:5035"]
+  gateway:
+    build:
+      context: ../
+      dockerfile: AgentPortalApiGateway/Dockerfile
+    ports: ["127.0.0.1:8099:8099"]
+  web:
+    build: ../Web
+    ports: ["127.0.0.1:8080:80"]
+networks:
+  default:
+    external: true
+    name: insurance-infra_default

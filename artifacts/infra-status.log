@@ -1,0 +1,5 @@
+SERVICE          STATE     PORTS
+elasticsearch    running   127.0.0.1:9200->9200/tcp
+eureka           running   127.0.0.1:8761->8761/tcp
+postgres         running   127.0.0.1:5432->5432/tcp
+rabbitmq         running   127.0.0.1:5672->5672/tcp, 127.0.0.1:15672->15672/tcp

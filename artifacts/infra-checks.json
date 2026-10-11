@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Eureka",
+    "url": "http://localhost:8761",
+    "status": 200
+  },
+  {
+    "name": "Elasticsearch",
+    "url": "http://localhost:9200",
+    "status": 200
+  },
+  {
+    "name": "RabbitMQ",
+    "url": "http://localhost:15672",
+    "status": 200
+  },
+  {
+    "name": "RabbitMQ API",
+    "url": "http://127.0.0.1:15672/api/overview",
+    "status": 200,
+    "version": "3.13.7"
+  },
+  {
+    "name": "Elasticsearch cluster",
+    "url": "http://127.0.0.1:9200/_cluster/health",
+    "status": 200,
+    "clusterStatus": "green"
+  },
+  {
+    "name": "Eureka registry",
+    "url": "http://127.0.0.1:8761/eureka/apps",
+    "status": 200
+  }
+]

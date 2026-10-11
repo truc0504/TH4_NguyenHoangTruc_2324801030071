@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="10a238a5-52fa-48d7-838b-c60a21313a3f" name="ADMIN@DESKTOP-E0FFO3B 2026-10-11 17:34:52" runUser="DESKTOP-E0FFO3B\ADMIN" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-11T17:34:52.8392771+07:00" queuing="2026-10-11T17:34:52.8392775+07:00" start="2026-10-11T17:34:50.7012496+07:00" finish="2026-10-11T17:34:52.8431388+07:00" />
+  <TestSettings name="default" id="7ceb6a20-3245-4530-a23f-1d6aa48f91f0">
+    <Deployment runDeploymentRoot="ADMIN_DESKTOP-E0FFO3B_2026-10-11_17_34_52" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="272eeb71-fa40-4648-9c07-4c1e5b85cfc2" testId="a2dde670-fe86-6d21-fb1f-5445019d66d1" testName="PolicySearchService.Test.EnvironmentSetupTests.ServiceRegistersMediatR" computerName="DESKTOP-E0FFO3B" duration="00:00:00.2308698" startTime="2026-10-11T17:34:52.7566358+07:00" endTime="2026-10-11T17:34:52.7566513+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="272eeb71-fa40-4648-9c07-4c1e5b85cfc2" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="PolicySearchService.Test.EnvironmentSetupTests.ServiceRegistersMediatR" storage="d:\th_kt&amp;tkpm\insurancemicroservices\policysearchservice.test\bin\release\net8.0\policysearchservice.test.dll" id="a2dde670-fe86-6d21-fb1f-5445019d66d1">
+      <Execution id="272eeb71-fa40-4648-9c07-4c1e5b85cfc2" />
+      <TestMethod codeBase="D:\TH_KT&amp;TKPM\InsuranceMicroservices\PolicySearchService.Test\bin\Release\net8.0\PolicySearchService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicySearchService.Test.EnvironmentSetupTests" name="ServiceRegistersMediatR" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="a2dde670-fe86-6d21-fb1f-5445019d66d1" executionId="272eeb71-fa40-4648-9c07-4c1e5b85cfc2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.13)&#xD;
+[xUnit.net 00:00:00.40]   Discovering: PolicySearchService.Test&#xD;
+[xUnit.net 00:00:00.42]   Discovered:  PolicySearchService.Test&#xD;
+[xUnit.net 00:00:00.42]   Starting:    PolicySearchService.Test&#xD;
+[xUnit.net 00:00:00.69]   Finished:    PolicySearchService.Test&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

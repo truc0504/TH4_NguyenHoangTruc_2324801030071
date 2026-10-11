@@ -1,0 +1,233 @@
+ Image insurance-infra-eureka Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 585B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 436B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/gradle:6.8.3-jdk8
+#3 DONE 2.6s
+
+#4 [internal] load metadata for docker.io/library/eclipse-temurin:8-jre
+#4 DONE 2.6s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [build 1/4] FROM docker.io/library/gradle:6.8.3-jdk8@sha256:9f6cc23298a3067f1ea36a1199cdc7af21d0993dcfd6c00e6ba585a0e460a76a
+#6 resolve docker.io/library/gradle:6.8.3-jdk8@sha256:9f6cc23298a3067f1ea36a1199cdc7af21d0993dcfd6c00e6ba585a0e460a76a 0.0s done
+#6 ...
+
+#7 [internal] load build context
+#7 transferring context: 60.87kB 0.0s done
+#7 DONE 0.1s
+
+#8 [stage-1 1/3] FROM docker.io/library/eclipse-temurin:8-jre@sha256:7806d0570e7234dccae4232e8273e87a0fcb74ca7c6f8692c9f5c672f355fd1d
+#8 resolve docker.io/library/eclipse-temurin:8-jre@sha256:7806d0570e7234dccae4232e8273e87a0fcb74ca7c6f8692c9f5c672f355fd1d 0.0s done
+#8 DONE 0.2s
+
+#6 [build 1/4] FROM docker.io/library/gradle:6.8.3-jdk8@sha256:9f6cc23298a3067f1ea36a1199cdc7af21d0993dcfd6c00e6ba585a0e460a76a
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 0B / 107.86MB 0.2s
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 6.29MB / 107.86MB 0.9s
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 12.58MB / 107.86MB 1.4s
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 19.92MB / 107.86MB 2.0s
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 26.21MB / 107.86MB 2.4s
+#6 sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c 0B / 65.61MB 0.2s
+#6 sha256:bdfd8ad6b4ad4c4cc2bdb2f1c121090d97e3426acb52eabca472c1c3ad470825 0B / 4.37kB 0.2s
+#6 sha256:bdfd8ad6b4ad4c4cc2bdb2f1c121090d97e3426acb52eabca472c1c3ad470825 4.37kB / 4.37kB 0.3s done
+#6 sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c 6.29MB / 65.61MB 0.6s
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 0B / 103.40MB 0.2s
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 32.51MB / 107.86MB 2.9s
+#6 sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c 11.53MB / 65.61MB 0.9s
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 5.24MB / 103.40MB 0.6s
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 38.80MB / 107.86MB 3.3s
+#6 sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c 16.78MB / 65.61MB 1.2s
+#6 sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c 20.97MB / 65.61MB 1.5s
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 12.58MB / 103.40MB 1.1s
+#6 sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c 26.21MB / 65.61MB 1.8s
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 46.14MB / 107.86MB 4.1s
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 18.87MB / 103.40MB 1.5s
+#6 sha256:592ec2d7c1370aca6ef48ee1d20fbb3a4c148db400adc5dc575778c681f5dba0 0B / 16.03MB 0.2s
+#6 sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c 30.41MB / 65.61MB 2.1s
+#6 sha256:592ec2d7c1370aca6ef48ee1d20fbb3a4c148db400adc5dc575778c681f5dba0 1.05MB / 16.03MB 0.5s
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 24.12MB / 103.40MB 2.0s
+#6 sha256:592ec2d7c1370aca6ef48ee1d20fbb3a4c148db400adc5dc575778c681f5dba0 3.15MB / 16.03MB 0.6s
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 52.43MB / 107.86MB 4.7s
+#6 sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c 35.65MB / 65.61MB 2.6s
+#6 sha256:592ec2d7c1370aca6ef48ee1d20fbb3a4c148db400adc5dc575778c681f5dba0 5.24MB / 16.03MB 0.8s
+#6 sha256:592ec2d7c1370aca6ef48ee1d20fbb3a4c148db400adc5dc575778c681f5dba0 6.29MB / 16.03MB 0.9s
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 29.36MB / 103.40MB 2.4s
+#6 sha256:592ec2d7c1370aca6ef48ee1d20fbb3a4c148db400adc5dc575778c681f5dba0 7.34MB / 16.03MB 1.1s
+#6 sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c 40.89MB / 65.61MB 3.0s
+#6 sha256:592ec2d7c1370aca6ef48ee1d20fbb3a4c148db400adc5dc575778c681f5dba0 9.44MB / 16.03MB 1.2s
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 59.77MB / 107.86MB 5.3s
+#6 sha256:592ec2d7c1370aca6ef48ee1d20fbb3a4c148db400adc5dc575778c681f5dba0 11.53MB / 16.03MB 1.4s
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 34.60MB / 103.40MB 2.9s
+#6 sha256:592ec2d7c1370aca6ef48ee1d20fbb3a4c148db400adc5dc575778c681f5dba0 12.58MB / 16.03MB 1.5s
+#6 sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c 46.14MB / 65.61MB 3.5s
+#6 sha256:592ec2d7c1370aca6ef48ee1d20fbb3a4c148db400adc5dc575778c681f5dba0 16.03MB / 16.03MB 1.7s done
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 67.11MB / 107.86MB 5.9s
+#6 sha256:5e9250ddb7d0fa6d13302c7c3e6a0aa40390e42424caed1e5289077ee4054709 0B / 187B 0.2s
+#6 sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c 50.33MB / 65.61MB 3.8s
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 40.89MB / 103.40MB 3.3s
+#6 sha256:5e9250ddb7d0fa6d13302c7c3e6a0aa40390e42424caed1e5289077ee4054709 187B / 187B 0.3s done
+#6 sha256:57671312ef6fdbecf340e5fed0fb0863350cd806c92b1fdd7978adbd02afc5c3 0B / 851B 0.2s
+#6 sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c 55.57MB / 65.61MB 4.1s
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 46.14MB / 103.40MB 3.6s
+#6 sha256:57671312ef6fdbecf340e5fed0fb0863350cd806c92b1fdd7978adbd02afc5c3 851B / 851B 0.3s done
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 74.45MB / 107.86MB 6.3s
+#6 sha256:345e3491a907bb7c6f1bdddcf4a94284b8b6ddd77eb7d93f09432b17b20f2bbe 0B / 28.54MB 0.2s
+#6 ...
+
+#8 [stage-1 1/3] FROM docker.io/library/eclipse-temurin:8-jre@sha256:7806d0570e7234dccae4232e8273e87a0fcb74ca7c6f8692c9f5c672f355fd1d
+#8 sha256:66d87f85fb7dc17c50a08f90d4f8c29f5e851027439f138f5ae188097efa26a8 2.46kB / 2.46kB 0.3s done
+#8 sha256:561d9d2b3dcf83a44f16d2e84f26b699c543a09589a824aadcee21d4f07f6c1b 127B / 127B 0.5s done
+#8 sha256:28ed8a051e91d3305484500e0e0cf0517fdbfc0e258566c1ceb017f0c27bff37 42.34MB / 42.34MB 2.9s done
+#8 sha256:b9771a4d44331dd9bbb2f8242fe3198b20addf26ec346c3c541e1f87018cb8b4 23.11MB / 23.11MB 3.1s done
+#8 sha256:06ad70e463aa4a17833d00d6d5d346c895ebb66fee637eefd67024dc6cdc2f1c 388B / 388B 0.5s done
+#8 sha256:4e07a0f12b2c009f98326fa391e869bd52fc63728c482400af6cb752bc16744b 41.84MB / 41.84MB 4.1s done
+#8 extracting sha256:4e07a0f12b2c009f98326fa391e869bd52fc63728c482400af6cb752bc16744b 2.6s done
+#8 DONE 7.5s
+
+#6 [build 1/4] FROM docker.io/library/gradle:6.8.3-jdk8@sha256:9f6cc23298a3067f1ea36a1199cdc7af21d0993dcfd6c00e6ba585a0e460a76a
+#6 sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c 59.77MB / 65.61MB 4.4s
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 51.38MB / 103.40MB 4.1s
+#6 sha256:345e3491a907bb7c6f1bdddcf4a94284b8b6ddd77eb7d93f09432b17b20f2bbe 2.10MB / 28.54MB 0.5s
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 81.79MB / 107.86MB 6.9s
+#6 sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c 65.61MB / 65.61MB 4.9s done
+#6 sha256:345e3491a907bb7c6f1bdddcf4a94284b8b6ddd77eb7d93f09432b17b20f2bbe 5.24MB / 28.54MB 0.8s
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 57.67MB / 103.40MB 4.5s
+#6 sha256:345e3491a907bb7c6f1bdddcf4a94284b8b6ddd77eb7d93f09432b17b20f2bbe 7.34MB / 28.54MB 0.9s
+#6 sha256:345e3491a907bb7c6f1bdddcf4a94284b8b6ddd77eb7d93f09432b17b20f2bbe 9.44MB / 28.54MB 1.1s
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 88.08MB / 107.86MB 7.4s
+#6 sha256:345e3491a907bb7c6f1bdddcf4a94284b8b6ddd77eb7d93f09432b17b20f2bbe 11.53MB / 28.54MB 1.2s
+#6 ...
+
+#8 [stage-1 1/3] FROM docker.io/library/eclipse-temurin:8-jre@sha256:7806d0570e7234dccae4232e8273e87a0fcb74ca7c6f8692c9f5c672f355fd1d
+#8 extracting sha256:06ad70e463aa4a17833d00d6d5d346c895ebb66fee637eefd67024dc6cdc2f1c 0.0s done
+#8 extracting sha256:b9771a4d44331dd9bbb2f8242fe3198b20addf26ec346c3c541e1f87018cb8b4 1.0s done
+#8 DONE 8.6s
+
+#6 [build 1/4] FROM docker.io/library/gradle:6.8.3-jdk8@sha256:9f6cc23298a3067f1ea36a1199cdc7af21d0993dcfd6c00e6ba585a0e460a76a
+#6 sha256:345e3491a907bb7c6f1bdddcf4a94284b8b6ddd77eb7d93f09432b17b20f2bbe 14.68MB / 28.54MB 1.4s
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 66.06MB / 103.40MB 5.1s
+#6 sha256:345e3491a907bb7c6f1bdddcf4a94284b8b6ddd77eb7d93f09432b17b20f2bbe 16.78MB / 28.54MB 1.5s
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 94.37MB / 107.86MB 7.8s
+#6 sha256:345e3491a907bb7c6f1bdddcf4a94284b8b6ddd77eb7d93f09432b17b20f2bbe 19.92MB / 28.54MB 1.8s
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 73.40MB / 103.40MB 5.6s
+#6 sha256:345e3491a907bb7c6f1bdddcf4a94284b8b6ddd77eb7d93f09432b17b20f2bbe 23.07MB / 28.54MB 2.0s
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 100.66MB / 107.86MB 8.3s
+#6 sha256:345e3491a907bb7c6f1bdddcf4a94284b8b6ddd77eb7d93f09432b17b20f2bbe 25.17MB / 28.54MB 2.1s
+#6 sha256:345e3491a907bb7c6f1bdddcf4a94284b8b6ddd77eb7d93f09432b17b20f2bbe 28.54MB / 28.54MB 2.3s done
+#6 ...
+
+#8 [stage-1 1/3] FROM docker.io/library/eclipse-temurin:8-jre@sha256:7806d0570e7234dccae4232e8273e87a0fcb74ca7c6f8692c9f5c672f355fd1d
+#8 extracting sha256:28ed8a051e91d3305484500e0e0cf0517fdbfc0e258566c1ceb017f0c27bff37 1.0s done
+#8 extracting sha256:561d9d2b3dcf83a44f16d2e84f26b699c543a09589a824aadcee21d4f07f6c1b 0.0s done
+#8 DONE 9.6s
+
+#6 [build 1/4] FROM docker.io/library/gradle:6.8.3-jdk8@sha256:9f6cc23298a3067f1ea36a1199cdc7af21d0993dcfd6c00e6ba585a0e460a76a
+#6 extracting sha256:345e3491a907bb7c6f1bdddcf4a94284b8b6ddd77eb7d93f09432b17b20f2bbe
+#6 ...
+
+#8 [stage-1 1/3] FROM docker.io/library/eclipse-temurin:8-jre@sha256:7806d0570e7234dccae4232e8273e87a0fcb74ca7c6f8692c9f5c672f355fd1d
+#8 extracting sha256:66d87f85fb7dc17c50a08f90d4f8c29f5e851027439f138f5ae188097efa26a8 0.1s done
+#8 DONE 9.7s
+
+#6 [build 1/4] FROM docker.io/library/gradle:6.8.3-jdk8@sha256:9f6cc23298a3067f1ea36a1199cdc7af21d0993dcfd6c00e6ba585a0e460a76a
+#6 sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 107.86MB / 107.86MB 8.7s done
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 83.89MB / 103.40MB 6.2s
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 91.23MB / 103.40MB 6.6s
+#6 ...
+
+#9 [stage-1 2/3] RUN mkdir /app
+#9 DONE 0.7s
+
+#6 [build 1/4] FROM docker.io/library/gradle:6.8.3-jdk8@sha256:9f6cc23298a3067f1ea36a1199cdc7af21d0993dcfd6c00e6ba585a0e460a76a
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 97.52MB / 103.40MB 6.9s
+#6 sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 103.40MB / 103.40MB 7.2s done
+#6 extracting sha256:345e3491a907bb7c6f1bdddcf4a94284b8b6ddd77eb7d93f09432b17b20f2bbe 1.2s done
+#6 extracting sha256:57671312ef6fdbecf340e5fed0fb0863350cd806c92b1fdd7978adbd02afc5c3 0.0s done
+#6 extracting sha256:5e9250ddb7d0fa6d13302c7c3e6a0aa40390e42424caed1e5289077ee4054709 0.0s done
+#6 extracting sha256:592ec2d7c1370aca6ef48ee1d20fbb3a4c148db400adc5dc575778c681f5dba0
+#6 extracting sha256:592ec2d7c1370aca6ef48ee1d20fbb3a4c148db400adc5dc575778c681f5dba0 0.6s done
+#6 DONE 11.3s
+
+#6 [build 1/4] FROM docker.io/library/gradle:6.8.3-jdk8@sha256:9f6cc23298a3067f1ea36a1199cdc7af21d0993dcfd6c00e6ba585a0e460a76a
+#6 extracting sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48
+#6 extracting sha256:2e6c56583c3770269ef63ed0a26ad2248d4a9c7b1e29499afc85e800b85c3e48 1.0s done
+#6 DONE 12.4s
+
+#6 [build 1/4] FROM docker.io/library/gradle:6.8.3-jdk8@sha256:9f6cc23298a3067f1ea36a1199cdc7af21d0993dcfd6c00e6ba585a0e460a76a
+#6 extracting sha256:bdfd8ad6b4ad4c4cc2bdb2f1c121090d97e3426acb52eabca472c1c3ad470825 0.0s done
+#6 extracting sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c
+#6 extracting sha256:a711e484c1fade34b66d95dc430f07a570ea9df7420e4a949fe116d8d698d86c 2.0s done
+#6 DONE 14.4s
+
+#6 [build 1/4] FROM docker.io/library/gradle:6.8.3-jdk8@sha256:9f6cc23298a3067f1ea36a1199cdc7af21d0993dcfd6c00e6ba585a0e460a76a
+#6 extracting sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a
+#6 extracting sha256:cd1a8f8bdcc2cf89d99dc783b2c30f6b4e8946407c07c20fa51c9a98605eea5a 0.7s done
+#6 DONE 15.1s
+
+#10 [build 2/4] COPY --chown=gradle:gradle . /home/gradle/eureka-server
+#10 DONE 0.5s
+
+#11 [build 3/4] WORKDIR /home/gradle/eureka-server
+#11 DONE 0.0s
+
+#12 [build 4/4] RUN gradle build --no-daemon
+#12 0.596 
+#12 0.596 Welcome to Gradle 6.8.3!
+#12 0.596 
+#12 0.596 Here are the highlights of this release:
+#12 0.596  - Faster Kotlin DSL script compilation
+#12 0.596  - Vendor selection for Java toolchains
+#12 0.596  - Convenient execution of tasks in composite builds
+#12 0.596  - Consistent dependency resolution
+#12 0.596 
+#12 0.596 For more details see https://docs.gradle.org/6.8.3/release-notes.html
+#12 0.596 
+#12 0.597 To honour the JVM settings for this build a single-use Daemon process will be forked. See https://docs.gradle.org/6.8.3/userguide/gradle_daemon.html#sec:disabling_the_daemon.
+#12 1.394 Daemon will be stopped at the end of the build 
+#12 44.49 > Task :compileJava
+#12 62.39 > Task :processResources
+#12 62.39 > Task :classes
+#12 66.49 > Task :bootJarMainClassName
+#12 66.89 > Task :bootJar
+#12 66.89 > Task :jar SKIPPED
+#12 66.89 > Task :assemble
+#12 66.89 > Task :compileTestJava NO-SOURCE
+#12 66.89 > Task :processTestResources NO-SOURCE
+#12 66.89 > Task :testClasses UP-TO-DATE
+#12 66.89 > Task :test NO-SOURCE
+#12 66.89 > Task :check UP-TO-DATE
+#12 66.89 > Task :build
+#12 66.89 
+#12 66.89 BUILD SUCCESSFUL in 1m 6s
+#12 66.89 4 actionable tasks: 4 executed
+#12 DONE 73.4s
+
+#13 [stage-1 3/3] COPY --from=build /home/gradle/eureka-server/build/libs/eureka-server-0.0.1-SNAPSHOT.jar /app/eureka-server.jar
+#13 DONE 3.2s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 4.9s done
+#14 exporting manifest sha256:3018552d2eb6ae32a35bbfd9ce21764a2abbcf338c35986bd21c9ed1af57ac1e 0.1s done
+#14 exporting config sha256:80830af1ad8526f770543fc7ec3300a66065de36b75de70d8740a3d0d57c594d
+#14 exporting config sha256:80830af1ad8526f770543fc7ec3300a66065de36b75de70d8740a3d0d57c594d 0.1s done
+#14 exporting attestation manifest sha256:78dc582e2bf89b01792b8b7bf5268a2efd0118cd7a1b8fbccc9438cfd7fc4398
+#14 exporting attestation manifest sha256:78dc582e2bf89b01792b8b7bf5268a2efd0118cd7a1b8fbccc9438cfd7fc4398 0.1s done
+#14 exporting manifest list sha256:ccd605174d74fd6e9ef9a146b85d9fc83a60db90e2d1af82ca0c0b33427854f7
+#14 exporting manifest list sha256:ccd605174d74fd6e9ef9a146b85d9fc83a60db90e2d1af82ca0c0b33427854f7 0.1s done
+#14 naming to docker.io/library/insurance-infra-eureka:latest done
+#14 unpacking to docker.io/library/insurance-infra-eureka:latest
+#14 unpacking to docker.io/library/insurance-infra-eureka:latest 4.3s done
+#14 DONE 9.7s
+
+#15 resolving provenance for metadata file
+#15 DONE 0.0s
+ Image insurance-infra-eureka Built 
