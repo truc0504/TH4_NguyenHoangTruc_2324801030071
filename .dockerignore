@@ -1,0 +1,8 @@
+**/bin
+**/obj
+**/node_modules
+**/dist
+.git
+.vs
+artifacts
+PricingService.Test_Backup

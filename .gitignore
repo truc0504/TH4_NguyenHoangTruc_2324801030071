@@ -1,0 +1,16 @@
+**/bin/
+**/obj/
+**/node_modules/
+**/dist/
+.vs/
+.idea/
+*.user
+*.suo
+.env
+**/.env.local
+**/.env.*.local
+**/build/
+**/.gradle/
+PricingService.Test_Backup/
+artifacts/submission.zip
+artifacts/runtime/

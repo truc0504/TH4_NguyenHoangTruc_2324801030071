@@ -1,0 +1,107 @@
+<!doctype html><html lang="vi"><meta charset="utf-8">
+<title>TH4 — Kết quả build và kiểm tra</title>
+<style>body{font:16px/1.6 'Segoe UI',sans-serif;background:#f2f5f8;color:#172231;margin:0}main{max-width:1160px;margin:32px auto;background:white;padding:36px;border-radius:12px}h1{font-size:30px;margin:0}h2{font-size:20px;margin-top:30px}.meta{color:#526172}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:24px 0}.card{background:#edf5f1;border:1px solid #b9d5c7;border-radius:8px;padding:16px}.card span{display:block;color:#436052}strong{display:block;font-size:17px}pre{background:#142231;color:#e5edf5;padding:20px;overflow:auto;white-space:pre-wrap;font:14px/1.6 Consolas,monospace}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border-bottom:1px solid #dbe2e9;text-align:left;padding:8px}a{color:#0758a1}.note{padding:14px;background:#fff7df}summary{cursor:pointer;font-weight:600}</style>
+<main><h1>Bài thực hành 4 — Kết quả build và kiểm tra</h1>
+<p class="meta">Nguyễn Hoàng Trúc · MSSV 2324801030071<br>Thời điểm lập báo cáo: 17:49:20 ngày 11/10/2026 (UTC+7)</p>
+<div class="cards"><div class='card'><span>.NET / 32 project</span><strong>PASS · 0 lỗi, 0 cảnh báo</strong></div><div class='card'><span>Kiểm thử MediatR</span><strong>10/10 đạt</strong></div><div class='card'><span>Vue production build</span><strong>PASS · 2 cảnh báo bundle</strong></div><div class='card'><span>Backup PostgreSQL</span><strong>4/4 restore đạt</strong></div></div>
+<p class="note">Bài cài đặt môi trường: các host đã đăng ký MediatR và có /health. Nghiệp vụ bán bảo hiểm, đăng nhập, chat và thanh toán chưa được triển khai trong bài này.</p>
+<h2>Build solution .NET — log gốc</h2><pre>Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:29.93
+
+Workload updates are available. Run `dotnet workload list` for more information.</pre>
+<p><a href="build-dotnet.log">Log đầy đủ 32 project</a> · <a href="test.log">Log kiểm thử</a> · <a href="build-web.log">Log Vue</a></p>
+<h2>Backup và restore PostgreSQL 16</h2><pre>RESTORE PASS: lab_netmicro_payments -&gt; check_lab_netmicro_payments
+RESTORE PASS: lab_netmicro_jobs -&gt; check_lab_netmicro_jobs
+RESTORE PASS: lab_netmicro_policy -&gt; check_lab_netmicro_policy
+RESTORE PASS: lab_netmicro_pricing -&gt; check_lab_netmicro_pricing</pre><ul><li>lab_netmicro_jobs.backup — 909 bytes</li><li>lab_netmicro_payments.backup — 925 bytes</li><li>lab_netmicro_policy.backup — 917 bytes</li><li>lab_netmicro_pricing.backup — 921 bytes</li></ul>
+<h2>Kiểm tra host chạy thật</h2><table><tr><th>Thành phần</th><th>URL</th><th>HTTP</th></tr><tr><td>AuthService</td><td>http://127.0.0.1:6060/health</td><td>200</td></tr><tr><td>ChatService</td><td>http://127.0.0.1:4099/health</td><td>200</td></tr><tr><td>ProductService</td><td>http://127.0.0.1:5030/health</td><td>200</td></tr><tr><td>PricingService</td><td>http://127.0.0.1:5041/health</td><td>200</td></tr><tr><td>OfferService</td><td>http://127.0.0.1:5045/health</td><td>200</td></tr><tr><td>PolicyService</td><td>http://127.0.0.1:5050/health</td><td>200</td></tr><tr><td>PolicySearchService</td><td>http://127.0.0.1:5065/health</td><td>200</td></tr><tr><td>PaymentService</td><td>http://127.0.0.1:5070/health</td><td>200</td></tr><tr><td>DocumentService</td><td>http://127.0.0.1:5080/health</td><td>200</td></tr><tr><td>DashboardService</td><td>http://127.0.0.1:5035/health</td><td>200</td></tr><tr><td>Gateway</td><td>http://127.0.0.1:8099/health</td><td>200</td></tr><tr><td>Blazor</td><td>http://127.0.0.1:5081/</td><td>200</td></tr></table>
+<h2>Danh sách CSDL</h2><pre>database        |  owner   
+-----------------------+----------
+ lab_netmicro_jobs     | lab_user
+ lab_netmicro_payments | lab_user
+ lab_netmicro_policy   | lab_user
+ lab_netmicro_pricing  | lab_user
+(4 rows)</pre>
+<h2>Hạ tầng Docker</h2><pre>SERVICE          STATE     PORTS
+elasticsearch    running   127.0.0.1:9200-&gt;9200/tcp
+eureka           running   127.0.0.1:8761-&gt;8761/tcp
+postgres         running   127.0.0.1:5432-&gt;5432/tcp
+rabbitmq         running   127.0.0.1:5672-&gt;5672/tcp, 127.0.0.1:15672-&gt;15672/tcp</pre>
+<details><summary>Kết quả Vue và cảnh báo kích thước bundle</summary><pre>WARNING  Compiled with 2 warnings5:37:07 PM
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  img/fontawesome-webfont.912ec66d.svg (434 KiB)
+  js/chunk-vendors.bebff963.js (311 KiB)
+  js/view-DashboardView-vue.00c9fe3c.js (471 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (511 KiB)
+      css/chunk-vendors.66c9f30d.css
+      js/chunk-vendors.bebff963.js
+      css/app.70ce6f6d.css
+      js/app.2b8de10d.js
+
+
+  File                                      Size             Gzipped
+
+  dist\js\view-DashboardView-vue.00c9fe3    471.27 kb        145.13 kb
+  c.js
+  dist\js\chunk-vendors.bebff963.js         310.88 kb        93.00 kb
+  dist\js\view-ChatView-vue.0780e619.js     70.19 kb         18.54 kb
+  dist\js\view-DashboardView-vue~view-Po    16.63 kb         6.02 kb
+  liciesView-vue~view-PolicyCreateView-v
+  ue~view-PolicyDetailsView-vue~vi~9ae27
+  a8c.5315f025.js
+  dist\js\view-PolicyDetailsView-vue.7ed    15.80 kb         6.25 kb
+  803ef.js
+  dist\js\app.2b8de10d.js                   10.47 kb         3.27 kb
+  dist\js\view-ProductDetailsView-vue.6d    5.97 kb          1.81 kb
+  23d2b7.js
+  dist\js\view-PolicyCreateView-vue.7a20    3.94 kb          1.30 kb
+  9d14.js
+  dist\js\view-PoliciesView-vue.9a0a8a68    3.17 kb          1.35 kb
+  .js
+  dist\js\view-AccountView-vue.3d335d38.    2.66 kb          1.07 kb
+  js
+  dist\js\view-ProductsView-vue.c76b9ead    2.56 kb          1.02 kb
+  .js
+  dist\js\view-ChatbotView-vue.41ece107.    1.11 kb          0.60 kb
+  js
+  dist\css\chunk-vendors.66c9f30d.css       188.05 kb        29.18 kb
+  dist\css\app.70ce6f6d.css                 1.29 kb          0.62 kb
+  dist\css\view-DashboardView-vue.6a6cb6    0.98 kb          0.33 kb
+  e4.css
+  dist\css\view-ChatView-vue.429a8b00.cs    0.19 kb          0.16 kb
+  s
+  dist\css\view-PoliciesView-vue.facfa6f    0.17 kb          0.13 kb
+  f.css
+  dist\css\view-PolicyCreateView-vue.790    0.09 kb          0.09 kb
+  b3c3c.css
+  dist\css\view-ProductDetailsView-vue.d    0.05 kb          0.06 kb
+  b390da4.css
+  dist\css\view-ProductsView-vue.85f86f6    0.05 kb          0.07 kb
+  1.css
+  dist\css\view-ChatbotView-vue.eebcfba8    0.00 kb          0.02 kb
+  .css
+  dist\css\view-PolicyDetailsView-vue.bf    0.00 kb          0.02 kb
+  b09f4c.css
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The dist directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Tip: the directory is meant to be served by an HTTP server, and will not work if
+you open it directly over file:// protocol. To preview it locally, use an HTTP
+server like the serve package on npm.</pre></details>
+</main></html>

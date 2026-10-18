@@ -1,0 +1,8 @@
+       database        |  owner   
+-----------------------+----------
+ lab_netmicro_jobs     | lab_user
+ lab_netmicro_payments | lab_user
+ lab_netmicro_policy   | lab_user
+ lab_netmicro_pricing  | lab_user
+(4 rows)
+

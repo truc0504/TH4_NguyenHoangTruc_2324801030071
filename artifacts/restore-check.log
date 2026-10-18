@@ -1,0 +1,4 @@
+RESTORE PASS: lab_netmicro_payments -> check_lab_netmicro_payments
+RESTORE PASS: lab_netmicro_jobs -> check_lab_netmicro_jobs
+RESTORE PASS: lab_netmicro_policy -> check_lab_netmicro_policy
+RESTORE PASS: lab_netmicro_pricing -> check_lab_netmicro_pricing
