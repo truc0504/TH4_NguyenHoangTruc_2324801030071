@@ -1,7 +1,28 @@
-var builder = WebApplication.CreateBuilder(args);
-    builder.Services.AddMediatR(config => config.RegisterServicesFromAssemblyContaining<Program>());
-    var app = builder.Build();
-    // Environment setup lab: business endpoints will be implemented in the next lab.
-    app.MapGet("/health", () => Results.Ok(new { service = "ChatService", status = "ok", stage = "environment-setup" }));
-    app.Run();
-    public partial class Program { }
+﻿using System.IO;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+
+namespace ChatService;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        CreateWebHostBuilder(args).Build().Run();
+    }
+
+    private static IWebHostBuilder CreateWebHostBuilder(string[] args)
+    {
+        var config = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("hosting.json", true)
+            .AddJsonFile("appsettings.json", true)
+            .AddCommandLine(args)
+            .Build();
+
+        return WebHost.CreateDefaultBuilder(args)
+            .UseConfiguration(config)
+            .UseStartup<Startup>();
+    }
+}

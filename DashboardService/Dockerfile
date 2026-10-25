@@ -1,10 +1,26 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-    WORKDIR /src
-    COPY . .
-    RUN dotnet publish DashboardService/DashboardService.csproj -c Release -o /app/publish
-    FROM mcr.microsoft.com/dotnet/aspnet:8.0
-    WORKDIR /app
-    COPY --from=build /app/publish .
-    ENV ASPNETCORE_URLS=http://+:5035
-    EXPOSE 5035
-    ENTRYPOINT ["dotnet", "DashboardService.dll"]
+
+ENV APP_HOME /opt/app
+RUN mkdir $APP_HOME
+WORKDIR $APP_HOME
+
+COPY DashboardService.Api/*.csproj $APP_HOME/DashboardService.Api/
+COPY PolicyService.Api/*.csproj $APP_HOME/PolicyService.Api/
+COPY DashboardService/*.csproj $APP_HOME/DashboardService/
+RUN  cd $APP_HOME/DashboardService && dotnet restore
+
+COPY DashboardService.Api $APP_HOME/DashboardService.Api/
+COPY PolicyService.Api $APP_HOME/PolicyService.Api/
+COPY DashboardService $APP_HOME/DashboardService/
+RUN cd $APP_HOME/DashboardService && dotnet build
+
+FROM build AS publish
+WORKDIR $APP_HOME/DashboardService
+RUN dotnet publish -c Release -o out
+
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+WORKDIR /app
+ENV ASPNETCORE_URLS=http://+:5035
+ENV ASPNETCORE_ENVIRONMENT=docker
+COPY --from=publish /opt/app/DashboardService/out ./
+ENTRYPOINT ["dotnet", "DashboardService.dll"]
